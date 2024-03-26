@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-7 m-auto">
         <h1 class="text-center mb-4">Cadastro de Produtos</h1>
-        <form class="">
+        <form [formGroup]="FormGroupProducts">
           <div class="mb-3">
             <input
               type="text"
@@ -40,16 +40,16 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">Id/Nome</th>
+              <th scope="col">Id e Nome</th>
               <th scope="col">Descrição</th>
-              <th scope="col">Preço/Quantidade</th>
+              <th scope="col">Preço e Quantidade</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let product of products">
-              <th scope="row">{{ product.idAndName }}</th>
-              <td>{{ product.description }}</td>
-              <td>{{ product.priceAndQuantity }}</td>
+            <tr *ngFor="let p of products">
+              <th scope="row">{{ p.idAndName }}</th>
+              <td>{{ p.description }}</td>
+              <td>{{ p.priceAndQuantity }}</td>
             </tr>
           </tbody>
         </table>
