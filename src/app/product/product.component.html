@@ -1,0 +1,59 @@
+<div class="container-fluid bg-dark vh-100">
+  <div class="container bg-light p-4 vh-100">
+    <div class="row">
+      <div class="col-7 m-auto">
+        <h1 class="text-center mb-4">Cadastro de Produtos</h1>
+        <form class="">
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Id e nome"
+              class="form-control"
+              id="idAndName"
+              formControlName="idAndName"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              placeholder="Descrição"
+              class="form-control"
+              id="description"
+              formControlName="description"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Preço e quantidade"
+              class="form-control"
+              id="priceAndQuantity"
+              formControlName="priceAndQuantity"
+            />
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-primary" type="button" (click)="save()">
+              Salvar
+            </button>
+          </div>
+        </form>
+        <h2 class="text-center mt-3">Produtos</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Id/Nome</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Preço/Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <th scope="row">{{ product.idAndName }}</th>
+              <td>{{ product.description }}</td>
+              <td>{{ product.priceAndQuantity }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
