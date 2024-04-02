@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "idAndName": "Produto 1",
+      "description": "Descrição do produto 1",
+      "priceAndQuantity": "10 2x",
+      "id": "8e03"
+    },
+    {
+      "idAndName": "Produto 2",
+      "description": "Descrição do produto 1",
+      "priceAndQuantity": "10 4x",
+      "id": "9170"
+    },
+    {
+      "id": "4fed",
+      "idAndName": "sda",
+      "description": "xxx",
+      "priceAndQuantity": "13 2x"
+    },
+    {
+      "id": "6405",
+      "idAndName": "sda",
+      "description": "xxx",
+      "priceAndQuantity": "13 2x"
+    }
+  ]
+}
